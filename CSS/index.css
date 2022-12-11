@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{--Background: #dbd7d7;}
+/* ********************Navbar******************** */
+#logo {
+  text-shadow: 0 0 0px white;
+  transition: all ease 0.7s;
+}
+#logo:hover {
+  text-shadow: 0 5px 10px white;
+}
+#menu:hover {
+  text-decoration: overline;
+}
+#btn {
+  opacity: 1;
+  transition: all ease 0.7s;
+}
+#btn:hover {
+  opacity: 0.8;
+}
+#btn:visited,
+#btn:focus {
+  background-color: rgb(190, 201, 34);
+  border: 1px white solid;
+}
+#container {
+  box-shadow: 0px 5px 35px 0px red;
+}
+/* **********Modal********** */
+
+#modal:hover{
+color: #fff !important;
+}
+/* ********************Header******************** */
+#btn2:hover,#btn:hover {
+  text-decoration: underline;
+}
+#withUs:hover, #headerIMG:hover, #sublime-text-svg:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#title:hover{
+  color: #866161;
+}
+#title-h2{
+  font-weight: 600;
+}
+/* ********************Features******************** */
+#Features-Title{
+  background-color:  var(--Background) !important;
+}
+.btn:hover{
+  background-color: purple !important; 
+  color: white;
+}
+#svg:hover, #ContactSVG:hover{
+  color: purple !important;
+}
+/* **********Coding PNG********** */
+#coding-SVG{
+  color: #4dba87 !important;
+  font-weight: bold;
+  cursor: pointer;
+}
+#coding-SVG:hover{  
+text-decoration: underline;
+}
+ /* **********Sublime Text********** */
+#sublime-text-svg{
+  width: 350px;
+  height: 350px;
+  margin-left: 40px;
+}
+#sublime-text{
+  background-color: #081828;
+  box-shadow: 0 4px 5px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all ease 0.7s;
+}
+#sublime-text:hover{
+  box-shadow: 0 4px 30px 5px purple !important;
+}
+/* **********Posts********** */
+#post-a-tag{
+  color: purple !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+#post-a-tag:hover{
+  color: black !important;
+  background: #ffc107 !important;
+  padding: 5px;
+  text-align: center;
+}
+#post-1-card{
+  width: 346px;
+  height: 345px;
+  transition: all ease-in 0.4s;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#post-2-card{
+  width: 346px;
+  height: 415px;
+  transition: all ease-in 0.4s;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#post-3-card{
+  width: 346px;
+  height: 485px; 
+  transition: all ease-in 0.4s;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#post-1-card:hover, #post-2-card:hover, #post-3-card:hover{
+  transform: translateY(30px);
+}
+/* **********Our Team********** */
+ul{
+  list-style: none;
+  position: relative;
+  left:  -15px;
+}
+#TelegramSVG:hover{
+  color: #0088cc;
+}
+#TwitterSVG:hover{
+  color: #00acee;
+}
+#InstagramSVG:hover{
+  color: rgb(138, 58, 185);
+} 
+#WhatsappSVG:hover{
+  color: rgb(37, 211, 102);
+}
+#teambox1{
+  animation: OurTeams 5s ease infinite;
+  margin-bottom: 10px;
+}
+#teambox2{
+  animation: OurTeams2 5s ease  infinite;
+  animation-delay: 0.25s;
+}
+#teambox3{
+  animation: OurTeams2 5s ease infinite;
+  animation-delay: 0.75s;
+}
+#teambox4{
+  animation: OurTeams 5s ease infinite;
+  animation-delay: 1s;
+}
+@keyframes OurTeams{
+  50%{transform: translateY(40px);}
+}
+@keyframes OurTeams2{
+  50%{transform: translateY(80px);}
+}
+/* **********Frequent  Questions********** */
+#Questions-Title{
+  background-color:  var(--Background) !important;
+}
+#question3, #question2, #question1{
+color: black;
+font-weight: bolder;
+}
+#question-box{
+  box-shadow: 0 4px 5px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* **********Contact********** */
+#contact-box1{
+  background-color: var(--Background);
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 3.1rem;
+  border-top-left-radius: 0;
+}
+#contact-box2{
+  background-color: var(--Background);
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 3.1rem;
+  border-top-right-radius: 0;
+}
+#contact-box3{
+  background-color: var(--Background);
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 3.1rem;
+  border-bottom-left-radius: 0;
+}
+#contact-box4{
+  background-color: var(--Background);
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 3.1rem;
+  border-bottom-right-radius: 0;
+}
+#ContactSVG{
+  cursor: pointer;
+}
+#phone-number{
+position: absolute;
+left: 350px;
+}
+#Contact-btn{
+  background-color: #ffc107 !important;
+  font-weight: bolder;
+}
+#Contact-btn:hover{
+  background-color: purple !important;
+  color: white;
+}
+/* **********Footer********** */
+
+#PraxTeam-Footer{
+  cursor: pointer;
+  color: #ffc107 !important;
+}
+#PraxTeam-Footer:hover{
+  text-decoration: underline;
+}
+#Menu-Footer a{
+  color: black;
+  text-decoration: none;
+}
+#Menu-Footer a:hover{
+  text-decoration: overline;
+  font-weight: bold;
+}
+#Social-Media-Footer a , #Posts-Footer a{
+    color: black;
+    text-decoration: none;
+}
+#Footer-white-parts{
+  color: white;
+}

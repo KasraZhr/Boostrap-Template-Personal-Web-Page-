@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Templates</title>
+    <!-- ********************Bootstrap Css Link******************** -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- ********************Cascadaing Style Sheet******************** -->
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+  </head>
+  <body>
+    <!-- ********************Navbar******************** -->
+    <div
+      class="bg-dark sticky-top p-2"
+      style="--bs-bg-opacity: 0.95"
+      id="container"
+    >
+      <nav class="navbar navbar-expand-lg navbar-dark container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="logo">PraxTeam</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  id="menu"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="menu">Portfolios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="menu">ContactUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="menu">AboutUs</a>
+              </li>
+            </ul>
+            <div class="d-flex" role="search" id="btn">
+              <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Subscribe Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: var(--Background);">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">PRAX Subscription</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>  
+          <div class="mb-3">
+            <label for="Email-Address" class="form-label">Put your email address for our news</label>
+            <input type="email" class="form-control" id="Email-Address" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="Mobile-Number" class="form-label">Put your mobile number for our new( Optional )</label>
+            <input type="email" class="form-control" id="Mobile-Number" placeholder="+98**********">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary fw-bold" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning fw-bold" id="modal">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- ********************Header-part******************** -->
+    <div class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="text-dark display-4 MB-4" id="title-h2">
+              <span id="title">Create your website </span
+              ><span class="text-warning fw-bold" id="withUs">with us</span
+              ><span id="title">!</span>
+            </h2>
+            <p class="lead text-muted MB-4">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              aspernatur commodi doloremque natus fuga eveniet sunt nesciunt
+              quaerat tempora quasi!
+            </p>
+            <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Subscribe Now!
+            </button>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="/IMG/Hand coding-cuate.png"
+              alt="Programming"
+              class="img-fluid"
+              id="headerIMG"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ********************Features******************** -->
+    <div class="py-4 bg-primary" id="Features-Title">
+      <section class="container">
+        <h2 class="display-5 text-center mt-5 text-dark">Features</h2>
+        <p class="lead text-muted text-center mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad ipsa
+          delectus quis, pariatur ullam nobis atque eaque, aut optio facere vero
+          officiis sapiente exercitationem! Asperiores cupiditate architecto
+          pariatur obcaecati?
+        </p>
+        <div class="row g-4 pb-5">
+          <div class="col-xl-4 col-md-6">
+            <div class="card p-5 text-center">
+              <div class="card-body">
+                <svg id="svg" class="mb-3 text-danger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+                </svg>
+                <h5 class="card-title mb-2">Activity</h5>
+                <p class="card-text lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, recusandae.</p>
+                <a href="#" class="btn btn-warning fw-bold" id="card-btn">Read more</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="card p-5 text-center">
+            <div class="card-body">
+              <svg  id="svg" class="mb-3 text-danger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
+              </svg>
+              <h5 class="card-title mb-2">Progress</h5>
+              <p class="card-text lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, recusandae.</p>
+              <a href="#" class="btn btn-warning fw-bold" id="card-btn">Read more</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="card p-5 text-center">
+          <div class="card-body">
+            <svg  id="svg" class="mb-3 text-danger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+            </svg>
+            <h5 class="card-title mb-2">HyperText Markup Language</h5>
+            <p class="card-text lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, recusandae.</p>
+            <a href="#" class="btn btn-warning fw-bold" id="card-btn">Read more</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6">
+      <div class="card p-5 text-center">
+        <div class="card-body">
+          <svg  id="svg" class="mb-3 text-danger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-filetype-css" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
+          </svg>
+          <h5 class="card-title mb-2">Cascading Style Sheet</h5>
+          <p class="card-text lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, recusandae.</p>
+          <a href="#" class="btn btn-warning fw-bold" id="card-btn">Read more</a>
+        </div>
+    </div>
+  </div>
+   <div class="col-xl-4 col-md-6">
+            <div class="card p-5 text-center">
+              <div class="card-body">
+                <svg  id="svg" class="mb-3 text-danger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+                </svg>
+                <h5 class="card-title mb-2">JS Language</h5>
+                <p class="card-text lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, recusandae.</p>
+                <a href="#" class="btn btn-warning fw-bold" id="card-btn">Read more</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="card p-5 text-center">
+            <div class="card-body">
+              <svg   id="svg" class="mb-3 text-danger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-calendar-month-fill" viewBox="0 0 16 16">
+                <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zm.104 7.305L4.9 10.18H3.284l.8-2.375h.02zm9.074 2.297c0-.832-.414-1.36-1.062-1.36-.692 0-1.098.492-1.098 1.36v.253c0 .852.406 1.364 1.098 1.364.671 0 1.062-.516 1.062-1.364v-.253z"/>
+                <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM2.56 12.332h-.71L3.748 7h.696l1.898 5.332h-.719l-.539-1.602H3.1l-.54 1.602zm7.29-4.105v4.105h-.668v-.539h-.027c-.145.324-.532.605-1.188.605-.847 0-1.453-.484-1.453-1.425V8.227h.676v2.554c0 .766.441 1.012.98 1.012.59 0 1.004-.371 1.004-1.023V8.227h.676zm1.273 4.41c.075.332.422.636.985.636.648 0 1.07-.378 1.07-1.023v-.605h-.02c-.163.355-.613.648-1.171.648-.957 0-1.64-.672-1.64-1.902v-.34c0-1.207.675-1.887 1.64-1.887.558 0 1.004.293 1.195.64h.02v-.577h.648v4.03c0 1.052-.816 1.579-1.746 1.579-1.043 0-1.574-.516-1.668-1.2h.687z"/>
+              </svg>
+              <h5 class="card-title mb-2">Project Deadline</h5>
+              <p class="card-text lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, recusandae.</p>
+              <a href="#" class="btn btn-warning fw-bold" id="card-btn">Read more</a>
+            </div>
+        </div>
+      </div>
+      </section>
+    </div>
+     <!-- **********Coding PNG**********  -->
+    <div class="py-5 mb-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="text-dark display-4 MB-4" id="title-h2">
+             Be <span id="coding-SVG">comfort</span> with our <span id="coding-SVG">coding</span>!
+            </h2>
+            <p class="lead text-muted MB-4">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              aspernatur commodi doloremque natus fuga eveniet sunt nesciunt
+              quaerat tempora quasi!
+            </p>
+            <a href="#" class="btn btn-warning fw-bold" id="btn2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>Read more!</a>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="/IMG/Hand coding-features.png"
+              alt="Coding"
+              class="img-fluid"
+              id="headerIMG"
+            /> </div></div></div></div>
+   <!-- **********Sublime Text**********  -->
+   <div class="py-5 mb-5 rounded-5" id="sublime-text">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img
+            src="/IMG/sublime-text.svg"
+            alt="sublime-text"
+            class="img-fluid"
+            id="sublime-text-svg"
+          /> </div>
+        <div class="col-md-6">
+          <h3 class="text-white display-4 MB-4">
+          Suitable for every <span class="text-warning">pc</span>!
+          </h3>
+          <p class="lead text-muted MB-4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+            aspernatur commodi doloremque natus fuga eveniet sunt nesciunt
+            quaerat tempora quasi!
+          </p>
+          <a href="#" class="btn btn-warning fw-bold" id="btn2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg>Read more!</a>
+        </div></div></div></div>
+         <!-- **********Posts**********  --> 
+         <div class="py-4">
+          <main class="container">
+            <h2 class="display-5 text-center mt-5 text-dark">New posts from our blog</h2>
+        <p class="lead text-muted text-center mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad ipsa
+          delectus quis, pariatur ullam nobis atque eaque, aut optio facere vero
+          officiis sapiente exercitationem! Asperiores cupiditate architecto
+          pariatur obcaecati?
+        </p>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card mb-3" id="post-1-card">
+                  <img src="/IMG/post1.jpg" class="card-img-top" alt="administrative affairs">
+                  <div class="card-body">
+                    <p class="card-text"><small class="text-muted">Last updated 2 hours ago</small></p>
+                    <h5 class="card-title">Administrative Affairs</h5>
+                    <p class="card-text text-muted ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio repellat vero veritatis animi libero.</p>
+                    <a href="#" id="post-a-tag" class="fs-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>Read more!</a>
+                  </div>  
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card mb-3" id="post-2-card">
+                <img src="/IMG/post2.jpg" class="card-img-top" alt="Supporting">
+                <div class="card-body">
+                  <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+                  <h5 class="card-title">Fast Response</h5>
+                  <p class="card-text text-muted ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio repellat vero veritatis animi libero.</p>
+                  <a href="#" id="post-a-tag" class="fs-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg>Read more!</a>
+                </div>  
+            </div>
+            
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3" id="post-3-card">
+              <img src="/IMG/post3.jpg" class="card-img-top" alt="Working">
+              <div class="card-body">
+                <p class="card-text mb-4"><small class="text-muted">Last updated 1 day ago</small></p>
+                <h5 class="card-title mb-4">Working Hour</h5>
+                <p class="card-text text-muted ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio repellat vero veritatis animi libero.</p>
+                <a href="#" id="post-a-tag" class="fs-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>Read more!</a>
+              </div>  
+          </div>
+        </div>
+          </main>
+         </div>
+       <!-- **********Our Team**********  --> 
+       <div class="py-4">
+        <main class="container">
+          <h2 class="display-5 text-center mt-5 text-dark">Our Team Members</h2>
+          <p class="lead text-muted text-center mb-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad ipsa
+        delectus quis, pariatur ullam nobis atque eaque, aut optio facere vero
+        officiis sapiente exercitationem! Asperiores cupiditate architecto
+        pariatur obcaecati?
+      </p>
+      <div class="row">
+        <div class="col-lg-3 text-center" id="teambox1">
+          <img src="/IMG/Team-Member1.PNG" alt="Front-End Developer" class="img-fluid rounded-pill p-2 border-3 border w-80 mb-4 " id="IMG-Founder">
+          <h2>Kasra Zohrabi</h2>
+          <p>Front-End Developer</p>
+          <ul class="d-flex justify-content-center">
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="TelegramSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="TwitterSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="InstagramSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="WhatsappSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 text-center" id="teambox2">
+          <img src="/IMG/Team2.jpg" alt="Back-end-developer" class="img-fluid rounded-circle p-2 border-3 border w-75 mb-4 " id="IMG-Founder">
+          <h2>Angelina </h2>
+          <p>Back-End Developer</p>
+          <ul class="d-flex justify-content-center">
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="TelegramSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="TwitterSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="InstagramSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="WhatsappSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 text-center" id="teambox3">
+          <img src="/IMG/Team3.jpg" alt="Full Stack Developer" class="img-fluid rounded-circle p-2 border-3 border w-75 mb-4 " id="IMG-Founder">
+          <h2>Emilia</h2>
+          <p>Full Stack Developer</p>
+          <ul class="d-flex justify-content-center">
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="TelegramSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="TwitterSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="InstagramSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="WhatsappSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 text-center" id="teambox4">
+          <img src="/IMG/Team4.jpg" alt="Social Media Manager" class="img-fluid rounded-pill p-2 border-3 border w-80 mb-4" id="IMG-Founder">
+          <h2>Adriano</h2>
+          <p>Social Media Manager</p>
+          <ul class="d-flex justify-content-center">
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="TelegramSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="TwitterSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="InstagramSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg></a></li>
+            <li class="mx-1"><a href="#" class="text-muted"><svg id="WhatsappSVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg></a></li>
+          </ul>
+        </div>
+      </div>
+      
+      </main>
+       </div>
+       <!-- **********Frequent Questions**********  --> 
+       <div class="p-4" id="Questions-Title">
+        <section>
+          <h2 class="display-5 text-center mt-5 text-dark">Frequent Questions</h2>
+          <p class="lead text-muted text-center mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad ipsa
+            delectus quis, pariatur ullam nobis atque eaque, aut optio facere vero
+            officiis sapiente exercitationem! Asperiores cupiditate architecto
+            pariatur obcaecati?
+          </p>
+          <div class="accordion accordion-flush" id="accordionFlushExample" id="question-box">
+            <div class="accordion-item" pb-4>
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button  id="question1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Why you should choose us?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam voluptatibus excepturi repellat vel itaque illo repudiandae eaque ex voluptatum ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dolor.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button  id="question2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                 What is the range of prices of web developing?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut numquam qui sunt dolore placeat id.idex file</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button   id="question3"  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                 <p> Where is our company?</p>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repellat veritatis corrupti aperiam accusamus ea quis. In unde quaerat distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id atque aspernatur dicta distinctio qui veniam odio, obcaecati similique animi eaque ratione, exercitationem, sapiente ea.</div>
+              </div>
+            </div>
+          </div>
+          </section></div>
+          <!-- **********Contact**********  --> 
+          <div class="py-4">
+            <section class="container">
+              <h2 class="display-5 text-center mt-5 text-dark">Contact</h2>
+          <p class="lead text-muted text-center mb-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad ipsa
+        delectus quis, pariatur ullam nobis atque eaque, aut optio facere vero
+        officiis sapiente exercitationem! Asperiores cupiditate architecto
+        pariatur obcaecati?
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="row g-4">
+            <div class="col-md-6  p-4" id="contact-box1">
+              <div>
+                <svg id="ContactSVG" class="text-danger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <h2>Location</h2>
+                <div>Tehran  Province</div>
+                <div>Farmandari Square</div>
+              </div></div>
+              <div class="col-md-6  p-4" id="contact-box2">
+                <div>
+                  <svg id="ContactSVG" class="text-danger"  xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                  <h2>Contact Us</h2>
+                  <div>+393399957495</div>
+                  <div id="phone-number"> 06 131 1494</div>
+                </div>
+            </div>
+            <div class="col-md-6  p-4" id="contact-box3">
+              <div>
+                <svg id="ContactSVG" class="text-danger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                  <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                  <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                </svg>
+                <h2>Email Us</h2>
+                <div>wokepo6786@covbase.com</div>
+                <div>xmail@covbase.com</div>
+              </div></div>
+              <div class="col-md-6 p-4" id="contact-box4">
+                <div>
+                  <svg id="ContactSVG" class="text-danger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                    <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+                  </svg>
+                  <h2>Open hours</h2>
+                  <div>Monday - Friday</div>
+                  <div>7 AM. - 5 PM.</div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-4 d-none" id="contact-box5">
+            <div>
+              <svg id="ContactSVG" class="text-danger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+              </svg>
+              <h2>Open hours</h2>
+              <div>Monday - Friday</div>
+              <div>7 AM. - 5 PM.</div>
+            </div>
+        </div></div>
+        <div class="col-md-6 p-4 rounded-5" style="background-color: var(--Background);">
+          <form>
+            <div class="mb-3">
+              <label for="FullName" class="form-label"> Full Name</label>
+              <input type="email" class="form-control" id="FullName" placeholder="Kasra Zohrabi">
+            </div>
+            <div class="mb-3">
+              <label for="Email-Address" class="form-label"> Your Email address</label>
+              <input type="email" class="form-control" id="Email-Address" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="Contact-Description" class="form-label">Your explanation, ideas, questions &amp; so on.</label>
+              <textarea class="form-control" id="Contact-Description" rows="3"></textarea>
+            </div>
+            <button class="btn" id="Contact-btn">Submit</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- **********Footer**********  --> 
+  <div class="py-4" style="background-color: #081828 !important;">
+    <footer class="container pt-5">
+      <div class="row py-4">
+        <div class="col-md-3">
+          <h2 class="mb-4" id="PraxTeam-Footer">PRAX Team!</h2>
+          <p  id="Footer-white-parts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatibus magni tempora architecto rerum nobis vero! Quod ad eaque debitis?</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="border-start border-4 border-warning ps-3" id="Footer-white-parts">Menu</h3>
+          <ul class="mt-4">
+            <li id="Menu-Footer"><a href="#" style="color: #ddd;">Home</a></li>
+            <li id="Menu-Footer"><a href="#" style="color: #ddd;">Portfolios</a></li>
+            <li id="Menu-Footer"><a href="#" style="color: #ddd;">ContactUs</a></li>
+            <li id="Menu-Footer"><a href="#" style="color: #ddd;">AboutUS</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="border-start border-4 border-warning ps-3" id="Footer-white-parts">Posts</h3>
+          <ul class="mt-4">
+            <li id="Posts-Footer"><a href="#" style="color: #ddd;">Home</a></li>
+            <li id="Posts-Footer"><a href="#" style="color: #ddd;">Portfolios</a></li>
+            <li id="Posts-Footer"><a href="#" style="color: #ddd;">ContactUs</a></li>
+            <li id="Posts-Footer"><a href="#" style="color: #ddd;">AboutUS</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="border-start border-4 border-warning ps-3" id="Footer-white-parts">Social Media</h3>
+          <ul class="mt-4">
+            <li id="Social-Media-Footer"><a href="#" style="color: #ddd;">Home</a></li>
+            <li id="Social-Media-Footer"><a href="#" style="color: #ddd;">Portfolios</a></li>
+            <li id="Social-Media-Footer"><a href="#" style="color: #ddd;">ContactUs</a></li>
+            <li id="Social-Media-Footer"><a href="#" style="color: #ddd;">AboutUS</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center"><span class="text-white">Developed By:</span> <span style="color: #ffc107 !important;">Kasra Zohrabi (PRAX Team)! </span> <span class="text-white">&#8486;</span></div>
+    </footer>
+  </div>
+  
+            
+    
+      
+
+
+
+
+            
+
+    <!-- ********************Bootstrap JS Link******************** -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
